@@ -31,10 +31,11 @@ setup(
     python_requires=">=3.7",
 
     # dynamic-versioning
-    use_scm_version={
-        'version_scheme': 'post-release',
-        'local_scheme': 'dirty-tag',
-        'write_to': 'src/cfgpkg/_version.py',
-    },
+    # use_scm_version={
+    #     'version_scheme': 'post-release',
+    #     'local_scheme': 'dirty-tag',
+    #     'write_to': 'src/cfgpkg/_version.py',
+    # },
+    use_scm_version=True,
     setup_requires=['setuptools_scm'],
 )
