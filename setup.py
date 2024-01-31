@@ -23,8 +23,15 @@ setup(
     package_data={
         '': ['**/*.yml', '**/*.json'],
     },
-    install_requires=[*get_dependencies()[0].keys()],
+    install_requires=[
+        *get_dependencies()[0].keys(),
+        'setuptools_scm',
+        ],
     platforms=["Windows", "Linux", "MacOS"],
     test_suite="pytest",
     python_requires=">=3.7",
+    use_scm_version={
+        'version_scheme': 'post-release',
+        'local_scheme': 'dirty-tag',
+    },
 )
