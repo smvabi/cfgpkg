@@ -14,7 +14,6 @@ def get_dependencies():
 
 setup(
     name="cfgpkg",
-    version="0.0.1",
     author="AB-InBev",
     description="AB-InBev Insights Copilot Engine repo package",
     include_package_data=True,
