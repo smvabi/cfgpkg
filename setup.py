@@ -31,7 +31,6 @@ setup(
     python_requires=">=3.7",
 
     # dynamic versioning
-    use_scm_version=True,
     use_scm_version={
         'version_scheme': 'post-release',
         'local_scheme': 'dirty-tag',
